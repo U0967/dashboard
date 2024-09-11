@@ -1,6 +1,7 @@
 // procesar la data para obetenere y mostrar los resultados de los pokemones
 
-import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/app/pokemons";
+
+import { PokemonGrid, PokemonsResponse, SimplePokemon } from '@/pokemons';
 import Image from 'next/image';
 
 //tipar la data inicia con promise
@@ -12,6 +13,9 @@ const getPokemons = async (limit=20, offset=0):Promise<SimplePokemon[]> => {
         id: pokemon.url.split('/').at(-2)!,
         name: pokemon.name,
     }))
+
+    //Forzar un error para visualizar la pantalla de error
+      //throw new Error('Este error no deberia de suceder');
 
     return pokemons;
 }

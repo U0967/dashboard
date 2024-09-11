@@ -28,7 +28,7 @@ const {id, name} =pokemon;
                         <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">{name}</p>
                     
                         <div className="mt-5">
-                            <Link href={`/pokemon/${id}`} className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100">Más información</Link>
+                            <Link href={`/dashboard/pokemon/${id}`} className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100">Más información</Link>
                         </div>
                     </div>
                     <div className="border-b">
